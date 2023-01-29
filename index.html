@@ -13,79 +13,95 @@
     />
   </head>
   <body>
-    <header>
-      <div class="navigation container">
-        <a class="logo" href="./index.html">
-          <span class="logo-color">Web</span>Studio</a
-        >
-        <nav class="navigation-header">
-          <ul class="contact-list navigation-list">
-            <li class="navigation-link">
-              <a class="link active-blue link-nav" href="./index.html"
-                >Agencja</a
-              >
-            </li>
-            <li class="navigation-link">
-              <a class="link active-blue" href="./portfolio.html">Portfolio</a>
-            </li>
-            <li class="navigation-link">
-              <a class="link active-blue" href="./kontakt.html">Kontakty</a>
-            </li>
-          </ul>
-        </nav>
-        <ul class="contact-header">
-          <li class="contact-list">
-            <a class="contact active-blue" href="mailto:info@devstudio.com">
-              <svg class="icon-header" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com</a
+    <header class="page-header container">
+      <a class="logo page-header__logo" href="./index.html">
+        <span class="logo__color--header">Web</span>Studio</a
+      >
+      <nav class="navigation-header">
+        <ul class="navigation-header__list">
+          <li>
+            <a
+              class="navigation-header--link navigation-header--underline-active active-blue"
+              href="./index.html"
+              >Agencja</a
             >
           </li>
-          <li class="contact-list">
-            <a class="contact active-blue contact-tel" href="tel:+48111111111">
-              <svg class="icon-header" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +48 111 111 111</a
+          <li>
+            <a
+              class="navigation-header--link active-blue"
+              href="./portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="navigation-header--link active-blue" href="./kontakt.html"
+              >Kontakty</a
             >
           </li>
         </ul>
-      </div>
+      </nav>
+      <ul class="contact-header">
+        <li>
+          <a
+            class="contact-header__item active-blue"
+            href="mailto:info@devstudio.com"
+          >
+            <svg class="contact-header__icon" width="16" height="12">
+              <use href="./images/icons.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li>
+          <a
+            class="contact-header__item active-blue contact-tel"
+            href="tel:+48111111111"
+          >
+            <svg class="contact-header__icon" width="10" height="16">
+              <use href="./images/icons.svg#icon-smartphone"></use>
+            </svg>
+            +48 111 111 111</a
+          >
+        </li>
+      </ul>
     </header>
     <main>
       <section class="mooto-section">
-        <div class="motto container">
-          <h1 class="main-title">
+        <div class="motto-section__div container">
+          <h1 class="motto-section__title">
             EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU
           </h1>
-          <button data-modal-open class="buttons order" type="button">
+          <button
+            data-modal-open
+            class="motto-section__btn buttons"
+            type="button"
+          >
             Zamów usługe
           </button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button data-modal-close class="close-icon">
-                <svg class="close" width="11" height="11">
+              <button data-modal-close class="modal__icon-close">
+                <svg width="11" height="11">
                   <use href="./images/icons.svg#icon-cross"></use>
                 </svg>
               </button>
-              <form class="form-order">
+              <form class="modal-form">
                 <div
-                  class="modal-form"
+                  class="modal-form__fildset"
                   role="group"
                   aria-labelledby="order-form"
                 >
-                  <h3 class="title-modal" id="order-form">
+                  <h3 class="modal-form__fildset--title" id="order-form">
                     Zostaw swoje dane w formularzu poniżej
                   </h3>
-                  <div class="modal-forms">
-                    <label for="name" class="label-modal">Imie </label>
-                    <div class="input-icon-focus">
-                      <svg class="icon-modal" width="13" height="13">
+                  <div class="modal-form__item">
+                    <label for="name" class="modal-form__label">Imie </label>
+                    <div class="modal-form__focus">
+                      <svg class="modal-form__icon" width="13" height="13">
                         <use href="./images/icons.svg#icon-personal"></use>
                       </svg>
                       <input
-                        class="input-modal"
+                        class="modal-form__input"
                         id="name"
                         name="user-name"
                         type="text"
@@ -94,15 +110,17 @@
                       />
                     </div>
                   </div>
-                  <div class="modal-forms">
-                    <label for="telephon" class="label-modal">Telefon</label>
-                    <div class="input-icon-focus">
-                      <svg class="icon-modal" width="13" height="13">
+                  <div class="modal-form__item">
+                    <label for="telephon" class="modal-form__label"
+                      >Telefon</label
+                    >
+                    <div class="modal-form__focus">
+                      <svg class="modal-form__icon" width="13" height="13">
                         <use href="./images/icons.svg#icon-telephon"></use>
                       </svg>
 
                       <input
-                        class="input-modal"
+                        class="modal-form__input"
                         id="telephon"
                         name="phone_number"
                         type="tel"
@@ -111,15 +129,17 @@
                       />
                     </div>
                   </div>
-                  <div class="modal-forms">
-                    <label for="user-email" class="label-modal">E-mail</label>
-                    <div class="input-icon-focus">
-                      <svg class="icon-modal" width="13" height="13">
+                  <div class="modal-form__item">
+                    <label for="user-email" class="modal-form__label"
+                      >E-mail</label
+                    >
+                    <div class="modal-form__focus">
+                      <svg class="modal-form__icon" width="13" height="13">
                         <use href="./images/icons.svg#icon-email"></use>
                       </svg>
 
                       <input
-                        class="input-modal"
+                        class="modal-form__input"
                         id="user-email"
                         name="email"
                         type="email"
@@ -128,10 +148,12 @@
                       />
                     </div>
                   </div>
-                  <div class="modal-forms">
-                    <label for="comment" class="label-modal">Komentarz </label>
+                  <div class="modal-form__item">
+                    <label for="comment" class="modal-form__label"
+                      >Komentarz
+                    </label>
                     <textarea
-                      class="text-modal"
+                      class="modal-form__textarea"
                       id="comment"
                       name="comment"
                       rows="8"
@@ -139,31 +161,31 @@
                     ></textarea>
                   </div>
                 </div>
-                <div class="check-div">
+                <div class="modal-form__check-div">
                   <input
-                    class="check-modal"
+                    class="modal-form__check-input"
                     type="checkbox"
                     id="checkbox"
                     name="declare"
                     required
                   />
-                  <label for="checkbox" class="checkbox"
+                  <label for="checkbox" class="modal-form__check-label"
                     >Oświadczam iż akceptuję
                     <a
-                      class="active-blue link-modal"
+                      class="active-blue modal-form__check-link"
                       href="https://www.google.pl/"
                     >
                       Regulamin</a
                     >
                     i<a
-                      class="active-blue link-modal"
+                      class="active-blue modal-form__check-link"
                       href="https://www.google.pl/"
                     >
                       Politykę Prywatności.</a
                     ></label
                   >
                 </div>
-                <button type="submit" class="btn-modal-form">Wyślij</button>
+                <button type="submit" class="modal-form__btn">Wyślij</button>
               </form>
             </div>
           </div>
@@ -234,7 +256,7 @@
         </ul>
       </section>
       <section class="our-work container section">
-        <h2 class="title title-work">Czym się zajmujemy</h2>
+        <h2 class="title-work">Czym się zajmujemy</h2>
         <ul class="our-work-img">
           <li>
             <img
@@ -273,7 +295,7 @@
       </section>
       <section class="our-team-section section">
         <div class="our-team-list container">
-          <h2 class="title title-team">Nasz zespół</h2>
+          <h2 class="title-team">Nasz zespół</h2>
 
           <ul class="team-list">
             <li class="teamat">
@@ -445,7 +467,7 @@
         </div>
       </section>
       <section class="clients section container">
-        <h3 class="title tiitle-client">Nasi klienci</h3>
+        <h2 class="tiitle-client">Nasi klienci</h2>
         <ul class="our-clients">
           <li class="list-icons-clients">
             <a class="active-blue link-client" href="https://www.google.pl/">
@@ -487,7 +509,7 @@
     <footer class="address-section">
       <section class="container media-footer">
         <section class="address">
-          <a class="logo-footer" href="./index"
+          <a class="logo logo-footer" href="./index"
             ><span class="logo-color">Web</span>Studio</a
           >
           <address class="our-zone">
