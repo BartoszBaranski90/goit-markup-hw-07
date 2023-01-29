@@ -219,7 +219,27 @@ h2 {
 }
 
 /* RULES */
-.icon-rules {
+
+.rules-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin: 0px;
+  gap: 30px;
+}
+
+.rules-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  margin: 0px;
+}
+.rules-list__explain {
+  color: var(--signatures);
+  font-size: 14px;
+  line-height: 1.72;
+}
+.rules-list__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -230,27 +250,27 @@ h2 {
   margin: 0px;
   margin-bottom: 30px;
 }
-.rules-list {
+/* CZYM SIE ZAJMUJEMY */
+
+.our-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-work__title {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.our-work__img {
   display: flex;
   justify-content: space-between;
+  position: relative;
   padding-left: 0px;
   margin: 0px;
   gap: 30px;
 }
-
-.rules {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  margin: 0px;
-}
-.explain-rules {
-  color: var(--signatures);
-  font-size: 14px;
-  line-height: 1.72;
-}
-/* CZYM SIE ZAJMUJEMY */
-.box-description {
+.our-work__figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,90 +280,36 @@ h2 {
   position: absolute;
   bottom: 4px;
 }
-.description {
+.our-work__description {
   font-size: 14px;
   line-height: 1.172;
   font-weight: 700;
   color: var(--logo-footer);
 }
-.our-work {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.title-work {
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-.our-work-img {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding-left: 0px;
-  margin: 0px;
-  gap: 30px;
-}
 
 /* NASZ ZESPÓŁ */
-.icon-maedia {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  padding-top: 16px;
-}
-.media-teamat {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  background-color: var(--logo-footer);
-}
-.media:focus .media-teamat,
-.media:focus .icon-teamat {
-  background-color: var(--link-focus);
-  fill: var(--logo-footer);
-  transition: var(--transition-active);
-}
 
-.media-teamat:hover,
-.media-teamat:active {
-  background-color: var(--link-focus);
-  transition: var(--transition-active);
-}
-.media-teamat:hover > svg {
-  fill: var(--logo-footer);
-  background-color: var(--link-focus);
-  transition: var(--transition-active);
-}
-
-.icon-teamat {
-  fill: var(--icon-client);
-}
-
-.our-team-section {
+.our-team {
   background-color: var(--buttons-background);
-}
-.our-team-list {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
-.title-team {
+
+.our-team__title {
   display: block;
   margin-top: 0px;
   margin-bottom: 50px;
 }
-.team-list {
+.our-team__list {
   display: flex;
   justify-content: space-between;
   padding: 0px;
   margin: 0px;
   gap: 30px;
 }
-.teamat {
+.our-team__team-member {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -353,33 +319,62 @@ h2 {
   background-color: var(--logo-footer);
   box-shadow: 0 4px 4px var(--shadow-teamat);
 }
-
-.our-teamat {
+.our-team__name {
   display: block;
   width: 72px;
   height: 19px;
   margin-top: 30px;
   margin-bottom: 10px;
-}
-.spec-teamat {
-  display: block;
-  padding: 0px;
-}
-.our-teamat {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.172;
 }
+.spec-team-member {
+  display: block;
+  padding: 0px;
+}
 
-.specialization {
+.our-team__specialization {
   color: var(--signatures);
   font-size: 16px;
   line-height: 1.172;
 }
-.types {
-  color: var(--signatures);
-  font-size: 16px;
-  line-height: 1.88;
+
+.media-section__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+.media-div-focus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--logo-footer);
+}
+.active-blue:focus .media-div-focus,
+.active-blue:focus .our-team-icon-media {
+  background-color: var(--link-focus);
+  fill: var(--logo-footer);
+  transition: var(--transition-active);
+}
+
+.media-div-focus:hover,
+.media-div-focus:active {
+  background-color: var(--link-focus);
+  transition: var(--transition-active);
+}
+.media-div-focus:hover > svg {
+  fill: var(--logo-footer);
+  background-color: var(--link-focus);
+  transition: var(--transition-active);
+}
+
+.our-team-icon-media {
+  fill: var(--icon-client);
 }
 /* NASI KLIENCI */
 .clients {
@@ -903,6 +898,11 @@ h2 {
   overflow: hidden;
   width: auto;
   height: 294px;
+}
+.types {
+  color: var(--signatures);
+  font-size: 16px;
+  line-height: 1.88;
 }
 .box-hidden {
   position: absolute;
