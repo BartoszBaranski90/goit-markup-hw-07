@@ -13,57 +13,61 @@
     />
   </head>
   <body>
-    <header class="page-header container">
-      <a class="logo page-header__logo" href="./index.html">
-        <span class="logo__color--header">Web</span>Studio</a
-      >
-      <nav class="navigation-header">
-        <ul class="navigation-header__list">
+    <header>
+      <section class="page-header container">
+        <a class="logo page-header__color--header" href="./index.html">
+          <span class="logo__color">Web</span>Studio</a
+        >
+        <nav class="navigation-header">
+          <ul class="navigation-header__list">
+            <li>
+              <a
+                class="navigation-header--link navigation-header--underline-active active-blue"
+                href="./index.html"
+                >Agencja</a
+              >
+            </li>
+            <li>
+              <a
+                class="navigation-header--link active-blue"
+                href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a
+                class="navigation-header--link active-blue"
+                href="./kontakt.html"
+                >Kontakty</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-header">
           <li>
             <a
-              class="navigation-header--link navigation-header--underline-active active-blue"
-              href="./index.html"
-              >Agencja</a
+              class="contact-header__item active-blue"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="contact-header__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
             <a
-              class="navigation-header--link active-blue"
-              href="./portfolio.html"
-              >Portfolio</a
+              class="contact-header__item active-blue contact-tel"
+              href="tel:+48111111111"
             >
-          </li>
-          <li>
-            <a class="navigation-header--link active-blue" href="./kontakt.html"
-              >Kontakty</a
+              <svg class="contact-header__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +48 111 111 111</a
             >
           </li>
         </ul>
-      </nav>
-      <ul class="contact-header">
-        <li>
-          <a
-            class="contact-header__item active-blue"
-            href="mailto:info@devstudio.com"
-          >
-            <svg class="contact-header__icon" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a
-            class="contact-header__item active-blue contact-tel"
-            href="tel:+48111111111"
-          >
-            <svg class="contact-header__icon" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111</a
-          >
-        </li>
-      </ul>
+      </section>
     </header>
     <main>
       <section class="mooto-section">
@@ -442,39 +446,39 @@
           </ul>
         </div>
       </section>
-      <section class="clients section container">
-        <h2 class="tiitle-client">Nasi klienci</h2>
-        <ul class="our-clients">
-          <li class="list-icons-clients">
-            <a class="active-blue link-client" href="https://www.google.pl/">
-              <div class="icon-client">
-                <svg class="icon-logo" width="106" height="60">
+      <section class="clients-section section container">
+        <h2 class="clients-section__title">Nasi klienci</h2>
+        <ul class="clients-section__list">
+          <li class="clients-section__item">
+            <a class="active-blue" href="https://www.google.pl/">
+              <div class="clients-section__box">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logo"></use>
                 </svg></div></a
-            ><a class="active-blue link-client" href="https://www.google.pl/">
-              <div class="icon-client">
-                <svg class="icon-logo" width="106" height="60">
+            ><a class="active-blue" href="https://www.google.pl/">
+              <div class="clients-section__box">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logotwo"></use>
                 </svg></div
             ></a>
-            <a class="active-blue link-client" href="https://www.google.pl/">
-              <div class="icon-client">
-                <svg class="icon-logo" width="106" height="60">
+            <a class="active-blue" href="https://www.google.pl/">
+              <div class="clients-section__box">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logothree"></use>
                 </svg></div></a
-            ><a class="active-blue link-client" href="https://www.google.pl/">
-              <div class="icon-client">
-                <svg class="icon-logo" width="106" height="60">
+            ><a class="active-blue" href="https://www.google.pl/">
+              <div class="clients-section__box">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logofour"></use>
                 </svg></div></a
-            ><a class="active-blue link-client" href="https://www.google.pl/">
-              <div class="icon-client">
-                <svg class="icon-logo" width="106" height="60">
+            ><a class="active-blue" href="https://www.google.pl/">
+              <div class="clients-section__box">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logofive"></use>
                 </svg></div></a
-            ><a class="active-blue link-client" href="https://www.google.pl/">
-              <div class="icon-client">
-                <svg class="icon-logo" width="106" height="60">
+            ><a class="active-blue" href="https://www.google.pl/">
+              <div class="clients-section__box">
+                <svg class="clients-section__logo" width="106" height="60">
                   <use href="./images/icons.svg#icon-Logosix"></use>
                 </svg></div
             ></a>
@@ -482,68 +486,52 @@
         </ul>
       </section>
     </main>
-    <footer class="address-section">
-      <section class="container media-footer">
-        <section class="address">
-          <a class="logo logo-footer" href="./index"
-            ><span class="logo-color">Web</span>Studio</a
+    <footer class="page-footer">
+      <section class="container page-footer__box">
+        <section class="our-zone">
+          <a class="logo page-footer__logo" href="./index"
+            ><span class="logo__color">Web</span>Studio</a
           >
-          <address class="our-zone">
-            <p class="legal-addres">m. Warszawa, Aleje Jerozolimskie 21</p>
+          <address class="our-zone__legal-addres">
+            <p class="our-zone__address">m. Warszawa, Aleje Jerozolimskie 21</p>
 
             <a
-              class="contact-footer active-blue"
+              class="our-zone__contact active-blue"
               href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
-            <a class="contact-footer active-blue" href="tel:+48111111111"
+            <a class="our-zone__contact active-blue" href="tel:+48111111111"
               >+48 111 111 111</a
             >
           </address>
         </section>
-        <section class="icon-footer">
+        <section class="media-footer">
           <ul>
-            <h4 class="join-to-us">DOŁĄCZ DO NAS</h4>
+            <h4 class="media-footer__title">DOŁĄCZ DO NAS</h4>
           </ul>
           <ul>
             <li class="media-section__list">
               <a class="active-blue" href="https://www.instagram.com/"
-                ><div class="box-icon-foot">
-                  <svg
-                    class="our-team-icon-media-footer"
-                    width="20"
-                    height="20"
-                  >
+                ><div class="media-footer__box">
+                  <svg class="media-footer__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-instagram"></use>
                   </svg></div></a
               ><a class="active-blue" href="https://www.twitter.com/"
-                ><div class="box-icon-foot">
-                  <svg
-                    class="our-team-icon-media-footer"
-                    width="20"
-                    height="20"
-                  >
+                ><div class="media-footer__box">
+                  <svg class="media-footer__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-twitter"></use>
                   </svg>
                 </div>
               </a>
               <a class="active-blue" href="https://www.facebook.com/"
-                ><div class="box-icon-foot">
-                  <svg
-                    class="our-team-icon-media-footer"
-                    width="20"
-                    height="20"
-                  >
+                ><div class="media-footer__box">
+                  <svg class="media-footer__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-facebook"></use>
                   </svg></div
               ></a>
               <a class="active-blue" href="https://pl.linkedin.com/">
-                <div class="box-icon-foot">
-                  <svg
-                    class="our-team-icon-media-footer"
-                    width="20"
-                    height="20"
-                  >
+                <div class="media-footer__box">
+                  <svg class="media-footer__icon" width="20" height="20">
                     <use href="./images/icons.svg#icon-linkedin"></use>
                   </svg>
                 </div>
@@ -552,21 +540,21 @@
           </ul>
         </section>
 
-        <form class="newsleter-footer">
-          <div class="newsletter">
-            <label class="save-newsletter" for="email-newsletter"
+        <form class="newsletter">
+          <div class="newsleter__box">
+            <label class="newsleter__label" for="email-newsletter"
               >ZAPISZ SIĘ DO NEWSLETTERA</label
             >
             <input
-              class="frame-newsletter"
+              class="newsleter__input"
               type="email"
               name="email-newsletter"
               id="email-newsletter"
               placeholder="E-mail"
             />
           </div>
-          <button class="btn-newsletter" type="submit">
-            Zapisz się<svg class="icon-newsletter" width="24" height="24">
+          <button class="newsleter__btn" type="submit">
+            Zapisz się<svg class="newsleter__btn--icon" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
             </svg>
           </button>
