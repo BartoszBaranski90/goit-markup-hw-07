@@ -1,0 +1,87 @@
+.our-team {
+  background-color: var(--buttons-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.our-team__title {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.our-team__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  gap: 30px;
+}
+.our-team__member {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 270px;
+  height: 428px;
+  background-color: var(--logo-footer);
+  box-shadow: 0 4px 4px var(--shadow-teamat);
+}
+.our-team__name {
+  display: block;
+  width: 72px;
+  height: 19px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.172;
+}
+.media-section {
+  display: block;
+  padding: 0px;
+}
+
+.our-team__specialization {
+  color: var(--signatures);
+  font-size: 16px;
+  line-height: 1.172;
+}
+
+.media-section__list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 16px;
+}
+.our-team__icon-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: var(--logo-footer);
+}
+.active-blue:focus .our-team__icon-circle,
+.active-blue:focus .our-team__icon {
+  background-color: var(--link-focus);
+  fill: var(--logo-footer);
+  transition: var(--transition-active);
+}
+
+.our-team__icon-circle:hover,
+.our-team__icon-circle:active {
+  background-color: var(--link-focus);
+  transition: var(--transition-active);
+}
+.our-team__icon-circle:hover > svg {
+  fill: var(--logo-footer);
+  background-color: var(--link-focus);
+  transition: var(--transition-active);
+}
+
+.our-team__icon {
+  fill: var(--clients-section__box);
+}

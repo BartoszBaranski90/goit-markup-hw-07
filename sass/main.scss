@@ -1,3 +1,10 @@
-p {
-  color: red;
-}
+@import "./utils/variables";
+@import "./utils/global.scss";
+@import "./components/page-header";
+@import "./components/motto";
+@import "./components/rules";
+@import "./components/our-work";
+@import "./components/our-team";
+@import "./components/our-clients";
+@import "./components/page-footer";
+@import "./components/portfolio-main";

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Homework</title>
     <meta name="description" content="Homework" />
     <meta charset="utf-8" />
@@ -82,117 +82,6 @@
           >
             Zamów usługe
           </button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button data-modal-close class="modal__icon-close">
-                <svg width="11" height="11">
-                  <use href="./images/icons.svg#icon-cross"></use>
-                </svg>
-              </button>
-              <form class="modal-form">
-                <div
-                  class="modal-form__fildset"
-                  role="group"
-                  aria-labelledby="order-form"
-                >
-                  <h3 class="modal-form__fildset-title" id="order-form">
-                    Zostaw swoje dane w formularzu poniżej
-                  </h3>
-                  <div class="modal-form__item">
-                    <label for="name" class="modal-form__label">Imie </label>
-                    <div class="modal-form__focus">
-                      <svg class="modal-form__icon" width="13" height="13">
-                        <use href="./images/icons.svg#icon-personal"></use>
-                      </svg>
-                      <input
-                        class="modal-form__input"
-                        id="name"
-                        name="user-name"
-                        type="text"
-                        placeholder=" "
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="modal-form__item">
-                    <label for="telephon" class="modal-form__label"
-                      >Telefon</label
-                    >
-                    <div class="modal-form__focus">
-                      <svg class="modal-form__icon" width="13" height="13">
-                        <use href="./images/icons.svg#icon-telephon"></use>
-                      </svg>
-
-                      <input
-                        class="modal-form__input"
-                        id="telephon"
-                        name="phone_number"
-                        type="tel"
-                        placeholder=" "
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="modal-form__item">
-                    <label for="user-email" class="modal-form__label"
-                      >E-mail</label
-                    >
-                    <div class="modal-form__focus">
-                      <svg class="modal-form__icon" width="13" height="13">
-                        <use href="./images/icons.svg#icon-email"></use>
-                      </svg>
-
-                      <input
-                        class="modal-form__input"
-                        id="user-email"
-                        name="email"
-                        type="email"
-                        placeholder=" "
-                        required
-                      />
-                    </div>
-                  </div>
-                  <div class="modal-form__item">
-                    <label for="comment" class="modal-form__label"
-                      >Komentarz
-                    </label>
-                    <textarea
-                      class="modal-form__textarea"
-                      id="comment"
-                      name="comment"
-                      rows="8"
-                      placeholder="Wprowadź tekst"
-                    ></textarea>
-                  </div>
-                </div>
-                <div class="modal-form__check-div">
-                  <input
-                    class="modal-form__check-input"
-                    type="checkbox"
-                    id="checkbox"
-                    name="declare"
-                    required
-                  />
-                  <label for="checkbox" class="modal-form__check-label"
-                    >Oświadczam iż akceptuję
-                    <a
-                      class="active-blue modal-form__check-link"
-                      href="https://www.google.pl/"
-                    >
-                      Regulamin</a
-                    >
-                    i<a
-                      class="active-blue modal-form__check-link"
-                      href="https://www.google.pl/"
-                    >
-                      Politykę Prywatności.</a
-                    ></label
-                  >
-                </div>
-                <button type="submit" class="modal-form__btn">Wyślij</button>
-              </form>
-            </div>
-          </div>
         </div>
       </section>
       <section class="container section">
@@ -554,7 +443,111 @@
     </footer>
 
     <!-- Wszystkie Twoje znaczniki HTML, w tym znaczniki okna modalnego  -->
+    <div class="modal__backdrop modal__is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="modal__icon-close">
+          <svg width="11" height="11">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <form class="modal-form">
+          <div
+            class="modal-form__fildset"
+            role="group"
+            aria-labelledby="order-form"
+          >
+            <h3 class="modal-form__fildset-title" id="order-form">
+              Zostaw swoje dane w formularzu poniżej
+            </h3>
+            <div class="modal-form__item">
+              <label for="name" class="modal-form__label">Imie </label>
+              <div class="modal-form__focus">
+                <svg class="modal-form__icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-personal"></use>
+                </svg>
+                <input
+                  class="modal-form__input"
+                  id="name"
+                  name="user-name"
+                  type="text"
+                  placeholder=" "
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-form__item">
+              <label for="telephon" class="modal-form__label">Telefon</label>
+              <div class="modal-form__focus">
+                <svg class="modal-form__icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-telephon"></use>
+                </svg>
 
+                <input
+                  class="modal-form__input"
+                  id="telephon"
+                  name="phone_number"
+                  type="tel"
+                  placeholder=" "
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-form__item">
+              <label for="user-email" class="modal-form__label">E-mail</label>
+              <div class="modal-form__focus">
+                <svg class="modal-form__icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+
+                <input
+                  class="modal-form__input"
+                  id="user-email"
+                  name="email"
+                  type="email"
+                  placeholder=" "
+                  required
+                />
+              </div>
+            </div>
+            <div class="modal-form__item">
+              <label for="comment" class="modal-form__label">Komentarz </label>
+              <textarea
+                class="modal-form__textarea"
+                id="comment"
+                name="comment"
+                rows="8"
+                placeholder="Wprowadź tekst"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-form__check-div">
+            <input
+              class="modal-form__check-input"
+              type="checkbox"
+              id="checkbox"
+              name="declare"
+              required
+            />
+            <label for="checkbox" class="modal-form__check-label"
+              >Oświadczam iż akceptuję
+              <a
+                class="active-blue modal-form__check-link"
+                href="https://www.google.pl/"
+              >
+                Regulamin</a
+              >
+              i<a
+                class="active-blue modal-form__check-link"
+                href="https://www.google.pl/"
+              >
+                Politykę Prywatności.</a
+              ></label
+            >
+          </div>
+          <button type="submit" class="modal-form__btn">Wyślij</button>
+        </form>
+      </div>
+    </div>
     <!-- Umieść przed zamykającym tagiem body -->
     <script src="./js/modal.js"></script>
   </body>
