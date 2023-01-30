@@ -96,7 +96,7 @@ h2 {
   text-align: center;
   width: 145px;
 }
-.page-header__color--header {
+.page-header__color {
   color: var(--logo-black);
 }
 .logo__color {
@@ -148,7 +148,7 @@ h2 {
   top: 45px;
   left: 0;
 }
-.navigation-header--link {
+.navigation-header__link {
   font-size: 14px;
   line-height: 1.172;
   font-weight: 500;
@@ -184,7 +184,7 @@ h2 {
   margin: auto;
 }
 
-.motto-section__div {
+.motto-section__inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,7 +309,7 @@ h2 {
   margin: 0px;
   gap: 30px;
 }
-.our-team__team-member {
+.our-team__member {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -329,7 +329,7 @@ h2 {
   font-size: 16px;
   line-height: 1.172;
 }
-.spec-team-member {
+.media-section {
   display: block;
   padding: 0px;
 }
@@ -346,7 +346,7 @@ h2 {
   gap: 10px;
   padding-top: 16px;
 }
-.media-div-focus {
+.our-team__icon-circle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -355,25 +355,25 @@ h2 {
   border-radius: 50px;
   background-color: var(--logo-footer);
 }
-.active-blue:focus .media-div-focus,
-.active-blue:focus .our-team-icon-media {
+.active-blue:focus .our-team__icon-circle,
+.active-blue:focus .our-team__icon {
   background-color: var(--link-focus);
   fill: var(--logo-footer);
   transition: var(--transition-active);
 }
 
-.media-div-focus:hover,
-.media-div-focus:active {
+.our-team__icon-circle:hover,
+.our-team__icon-circle:active {
   background-color: var(--link-focus);
   transition: var(--transition-active);
 }
-.media-div-focus:hover > svg {
+.our-team__icon-circle:hover > svg {
   fill: var(--logo-footer);
   background-color: var(--link-focus);
   transition: var(--transition-active);
 }
 
-.our-team-icon-media {
+.our-team__icon {
   fill: var(--clients-section__box);
 }
 /* NASI KLIENCI */
@@ -654,7 +654,7 @@ h2 {
   padding: 0px;
 }
 
-.modal-form__fildset--title {
+.modal-form__fildset-title {
   display: block;
   width: 448px;
   text-align: center;
