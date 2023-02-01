@@ -19,14 +19,6 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.buttons:focus,
-.buttons:hover,
-.buttons:active {
-  color: var(--logo-footer);
-  background-color: var(--link-focus);
-  border: var(--link-focus);
-  transition: var(--transition-active);
-}
 .buttons {
   font-family: var(--main-font);
   color: var(main-text);
@@ -37,6 +29,7 @@ ul {
   background-color: var(--buttons-background);
   border-radius: 4px;
 }
+
 .active-blue:focus,
 .active-blue:hover,
 .active-blue:active {
