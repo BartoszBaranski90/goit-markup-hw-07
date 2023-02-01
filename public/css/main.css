@@ -78,160 +78,6 @@ h2 {
   line-height: 1.172;
 }
 
-.mooto-section {
-  border: 1px;
-  height: 600px;
-  border-color: var(--logo-black);
-  background-color: var(--baground);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-motto)), to(var(--gradient-motto))), url(../images/motto.jpg);
-  background-image: linear-gradient(var(--gradient-motto), var(--gradient-motto)), url(../images/motto.jpg);
-  max-width: 1600px;
-  background-size: cover;
-  margin: auto;
-}
-
-.motto-section__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  gap: 30px;
-}
-
-.motto-section__title {
-  color: var(--logo-footer);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  display: block;
-  margin: 0px;
-  text-align: center;
-}
-
-.motto-section__btn {
-  font-family: var(--main-font);
-  color: var(--logo-footer);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  cursor: pointer;
-  background-color: var(--link-focus);
-  border: 1px solid var(--link-focus);
-  width: 200px;
-  height: 50px;
-  border: 0px;
-  padding: 10px 41px 10px 42px;
-}
-
-.rules-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-left: 0px;
-  margin: 0px;
-  gap: 30px;
-}
-
-.rules-list__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  margin: 0px;
-}
-
-.rules-list__explain {
-  color: var(--signatures);
-  font-size: 14px;
-  line-height: 1.72;
-}
-
-.rules-list__icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 270px;
-  height: 120px;
-  background-color: var(--buttons-background);
-  border-radius: 4px;
-  margin: 0px;
-  margin-bottom: 30px;
-}
-
-.our-work {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.our-work__title {
-  display: block;
-  margin-top: 0px;
-  margin-bottom: 50px;
-}
-
-.our-work__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  padding-left: 0px;
-  margin: 0px;
-  gap: 30px;
-}
-
-.our-work__figcaption {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 370px;
-  height: 70px;
-  background-color: var(--box-description-bgc);
-  position: absolute;
-  bottom: 4px;
-}
-
-.our-work__description {
-  font-size: 14px;
-  line-height: 1.172;
-  font-weight: 700;
-  color: var(--logo-footer);
-}
-
 .our-team {
   background-color: var(--buttons-background);
   display: -webkit-box;
@@ -959,6 +805,150 @@ h2 {
   fill: var(--link-focus);
   -webkit-transition: var(--transition-active);
   transition: var(--transition-active);
+}
+
+.motto-section {
+  border: 1px;
+  height: 600px;
+  border-color: var(--logo-black);
+  background-color: var(--baground);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--gradient-motto)), to(var(--gradient-motto))), url(../images/motto.jpg);
+  background-image: linear-gradient(var(--gradient-motto), var(--gradient-motto)), url(../images/motto.jpg);
+  max-width: 1600px;
+  background-size: cover;
+  margin: auto;
+}
+.motto-section__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+.motto-section__title {
+  color: var(--logo-footer);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  display: block;
+  margin: 0px;
+  text-align: center;
+}
+.motto-section__btn {
+  font-family: var(--main-font);
+  color: var(--logo-footer);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  background-color: var(--link-focus);
+  border: 1px solid var(--link-focus);
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  padding: 10px 41px 10px 42px;
+}
+
+.rules-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 0px;
+  margin: 0px;
+  gap: 30px;
+}
+.rules-list__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  margin: 0px;
+}
+.rules-list__explain {
+  color: var(--signatures);
+  font-size: 14px;
+  line-height: 1.72;
+}
+.rules-list__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--buttons-background);
+  border-radius: 4px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+
+.our-work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.our-work__title {
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.our-work__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  padding-left: 0px;
+  margin: 0px;
+  gap: 30px;
+}
+.our-work__figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: var(--box-description-bgc);
+  position: absolute;
+  bottom: 4px;
+}
+.our-work__description {
+  font-size: 14px;
+  line-height: 1.172;
+  font-weight: 700;
+  color: var(--logo-footer);
 }
 
 .modal {

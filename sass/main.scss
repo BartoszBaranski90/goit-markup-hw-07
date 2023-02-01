@@ -1,9 +1,5 @@
 @import "./utils/variables";
 @import "./utils/global.scss";
-@import "./components/motto";
-@import "./components/modal";
-@import "./components/rules";
-@import "./components/our-work";
 @import "./components/our-team";
 @import "./components/our-clients";
 @import "./components/page-footer";
@@ -101,6 +97,115 @@
       fill: var(--link-focus);
       transition: var(--transition-active);
     }
+  }
+}
+
+.motto-section {
+  border: 1px;
+  height: 600px;
+  border-color: var(--logo-black);
+  background-color: var(--baground);
+  background-image: linear-gradient(
+      var(--gradient-motto),
+      var(--gradient-motto)
+    ),
+    url(../images/motto.jpg);
+  max-width: 1600px;
+  background-size: cover;
+  margin: auto;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+  }
+  &__title {
+    color: var(--logo-footer);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    display: block;
+    margin: 0px;
+    text-align: center;
+  }
+  &__btn {
+    font-family: var(--main-font);
+    color: var(--logo-footer);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    background-color: var(--link-focus);
+    border: 1px solid var(--link-focus);
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    padding: 10px 41px 10px 42px;
+  }
+}
+.rules-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin: 0px;
+  gap: 30px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172;
+    margin: 0px;
+  }
+  &__explain {
+    color: var(--signatures);
+    font-size: 14px;
+    line-height: 1.72;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--buttons-background);
+    border-radius: 4px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}
+.our-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    display: block;
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  &__img {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 0px;
+    margin: 0px;
+    gap: 30px;
+  }
+  &__figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 70px;
+    background-color: var(--box-description-bgc);
+    position: absolute;
+    bottom: 4px;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 1.172;
+    font-weight: 700;
+    color: var(--logo-footer);
   }
 }
 .modal {
