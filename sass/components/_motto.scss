@@ -1,0 +1,45 @@
+.motto-section {
+  border: 1px;
+  height: 600px;
+  border-color: var(--logo-black);
+  background-color: var(--baground);
+  background-image: linear-gradient(
+      var(--gradient-motto),
+      var(--gradient-motto)
+    ),
+    url(../images/motto.jpg);
+  max-width: 1600px;
+  background-size: cover;
+  margin: auto;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 30px;
+  }
+  &__title {
+    color: var(--logo-footer);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    display: block;
+    margin: 0px;
+    text-align: center;
+  }
+  &__btn {
+    font-family: var(--main-font);
+    color: var(--logo-footer);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    cursor: pointer;
+    background-color: var(--link-focus);
+    border: 1px solid var(--link-focus);
+    width: 200px;
+    height: 50px;
+    border: 0px;
+    padding: 10px 41px 10px 42px;
+  }
+}

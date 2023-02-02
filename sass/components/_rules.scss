@@ -1,0 +1,29 @@
+.rules-list {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin: 0px;
+  gap: 30px;
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172;
+    margin: 0px;
+  }
+  &__explain {
+    color: var(--signatures);
+    font-size: 14px;
+    line-height: 1.72;
+  }
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background-color: var(--buttons-background);
+    border-radius: 4px;
+    margin: 0px;
+    margin-bottom: 30px;
+  }
+}

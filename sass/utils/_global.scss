@@ -29,12 +29,44 @@ ul {
   background-color: var(--buttons-background);
   border-radius: 4px;
 }
+.buttons {
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--logo-footer);
+    background-color: var(--link-focus);
+    border: var(--link-focus);
+    -webkit-transition: var(--transition-active);
+    transition: var(--transition-active);
+  }
+}
 
 .active-blue:focus,
 .active-blue:hover,
 .active-blue:active {
   color: var(--link-focus);
   transition: var(--transition-active);
+  & .our-team__icon-circle,
+  & .our-team__icon {
+    background-color: var(--link-focus);
+    fill: var(--logo-footer);
+    transition: var(--transition-active);
+  }
+  & .clients-section__box,
+  & .clients-section__logo {
+    border-color: (--link-focus);
+    fill: var(--link-focus);
+    transition: var(--transition-active);
+  }
+  & > .clients-section__box {
+    border-color: var(--link-focus);
+    fill: var(--link-focus);
+  }
+  & > .media-footer__box {
+    background-color: var(--link-focus);
+    fill: var(--logo-footer);
+    transition: var(--transition-active);
+  }
 }
 h2 {
   font-size: 36px;

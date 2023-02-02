@@ -1,151 +1,145 @@
 .page-footer {
   background-color: var(--baground);
+  &__logo {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: var(--logo-footer);
+  }
+  &__box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 70px;
+  }
 }
 .our-zone {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  &__legal-addres {
+    display: flex;
+    flex-direction: column;
+    width: 246px;
+    height: 81px;
+    gap: 9px;
+    margin-bottom: 60px;
+    color: var(--logo-footer);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1, 71;
+    background-color: var(--baground);
+  }
+  &__address {
+    display: block;
+    margin: 0px;
+  }
+  &__contact {
+    color: var(--contact-footer);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.172;
+    font-style: normal;
+    text-decoration: none;
+    display: block;
+    padding-top: 9px;
+  }
 }
-.our-zone__legal-addres {
-  display: flex;
-  flex-direction: column;
-  width: 246px;
-  height: 81px;
-  gap: 9px;
-  margin-bottom: 60px;
-  color: var(--logo-footer);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1, 71;
-  background-color: var(--baground);
-}
-.page-footer__logo {
-  margin-top: 60px;
-  margin-bottom: 20px;
-  color: var(--logo-footer);
+.media-footer {
+  &__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    background-color: var(--signatures);
+    &:hover,
+    &:active {
+      background-color: var(--link-focus);
+      transition: var(--transition-active);
+    }
+    &:hover > svg {
+      fill: var(--logo-footer);
+      background-color: var(--link-focus);
+      transition: var(--transition-active);
+    }
+  }
+  &__icon {
+    fill: var(--logo-footer);
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172;
+    color: var(--logo-footer);
+    margin: 0px;
+  }
 }
 
-.our-zone__address {
-  display: block;
-  margin: 0px;
-}
-
-.our-zone__contact {
-  color: var(--contact-footer);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.172;
-  font-style: normal;
-  text-decoration: none;
-  display: block;
-  padding-top: 9px;
-}
-.page-footer__box {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 70px;
-}
-.media-footer__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  background-color: var(--signatures);
-}
-.active-blue:focus > .media-footer__box {
-  background-color: var(--link-focus);
-  fill: var(--logo-footer);
-  transition: var(--transition-active);
-}
-
-.media-footer__box:hover > svg {
-  fill: var(--logo-footer);
-  background-color: var(--link-focus);
-  transition: var(--transition-active);
-}
-.media-footer__box:hover,
-.media-footer__box:active {
-  background-color: var(--link-focus);
-  transition: var(--transition-active);
-}
-.media-footer__icon {
-  fill: var(--logo-footer);
-}
-.media-footer__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  color: var(--logo-footer);
-  margin: 0px;
-}
 .newsletter {
   display: flex;
   gap: 12px;
   align-items: flex-end;
-}
-.newsleter__box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.newsleter__label {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.172;
-  color: var(--logo-footer);
-  margin: 0px;
-}
-.newsleter__input {
-  width: 358px;
-  height: 50px;
-  border: 1px solid var(--newsletter-border);
-  border-radius: 4px;
-  margin: 0px;
-  padding: 0px;
-  background-color: var(--baground);
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  padding-left: 16px;
-  color: var(--logo-footer);
-  outline: none;
-}
-.newsleter__input::placeholder {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  color: var(--newsletter-color-font);
-  padding-left: 16px;
-}
-
-.newsleter__btn {
-  display: inline-flex;
-  justify-content: space-evenly;
-  align-items: center;
-  padding: 0px;
-  width: 200px;
-  height: 50px;
-  background-color: var(--link-focus);
-  border: 2px solid var(--link-focus);
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  color: var(--logo-footer);
-  box-shadow: 0px 4px 4px var(--shadow-teamat);
-}
-.newsleter__btn--icon {
-  fill: var(--logo-footer);
-  transition: transform var(--transition-active);
-}
-.newsleter__btn:hover {
-  cursor: pointer;
-}
-.newsleter__btn:hover .newsleter__btn--icon {
-  transform: rotate(360deg);
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.172;
+    color: var(--logo-footer);
+    margin: 0px;
+  }
+  &__input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid var(--newsletter-border);
+    border-radius: 4px;
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--baground);
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    padding-left: 16px;
+    color: var(--logo-footer);
+    outline: none;
+    &::placeholder {
+      font-family: var(--main-font);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.25;
+      color: var(--newsletter-color-font);
+      padding-left: 16px;
+    }
+  }
+  &__btn {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+    width: 200px;
+    height: 50px;
+    background-color: var(--link-focus);
+    border: 2px solid var(--link-focus);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    color: var(--logo-footer);
+    box-shadow: 0px 4px 4px var(--shadow-teamat);
+    &--icon {
+      fill: var(--logo-footer);
+      transition: transform var(--transition-active);
+    }
+    &:hover {
+      cursor: pointer;
+      & .newsleter__btn--icon {
+        transform: rotate(360deg);
+      }
+    }
+  }
 }
