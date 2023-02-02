@@ -9,6 +9,10 @@ ul {
   padding-left: 0px;
   margin: 0px;
 }
+h2 {
+  font-size: 36px;
+  line-height: 1.172;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -28,8 +32,6 @@ ul {
   cursor: pointer;
   background-color: var(--buttons-background);
   border-radius: 4px;
-}
-.buttons {
   &:hover,
   &:focus,
   &:active {
@@ -67,8 +69,4 @@ ul {
     fill: var(--logo-footer);
     transition: var(--transition-active);
   }
-}
-h2 {
-  font-size: 36px;
-  line-height: 1.172;
 }

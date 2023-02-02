@@ -11,6 +11,11 @@ ul {
   margin: 0px;
 }
 
+h2 {
+  font-size: 36px;
+  line-height: 1.172;
+}
+
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -33,7 +38,6 @@ ul {
   background-color: var(--buttons-background);
   border-radius: 4px;
 }
-
 .buttons:hover, .buttons:focus, .buttons:active {
   color: var(--logo-footer);
   background-color: var(--link-focus);
@@ -82,11 +86,6 @@ ul {
   fill: var(--logo-footer);
   -webkit-transition: var(--transition-active);
   transition: var(--transition-active);
-}
-
-h2 {
-  font-size: 36px;
-  line-height: 1.172;
 }
 
 :root {
